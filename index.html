@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            box-sizing: border-box;
+            position: relative;
+        }
+        body{
+            text-align: center;
+        }
+        #rightnav {
+            float:right;
+            display: flex;
+            align-items: center;
+            
+        }
+        #leftnav{
+            float:left;
+            align-items: center;
+            display: flex;
+        }
+        .about{
+            margin: 15px 10px auto 12px;
+        }
+        .store{
+            margin: 15px auto auto 9px;
+        }
+        .gmail{
+            margin: 15px 9px auto auto
+        }
+        .images{
+            margin: 15px 9px auto 10px
+        }
+        #apps{
+            margin: 11px 12px auto 12px;
+        }
+        #profile{
+            font-size: 30px;
+            margin: 11px 12px auto 12px;
+        }
+        .google-search{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+
+        }
+
+        .search-bar{
+            position: relative;
+            align-content: center;
+            justify-content: center;
+            margin: 5px;
+        }
+
+        input
+            position:absolute;
+            transform: translate(-50%, -50%)
+        }
+
+        body{
+            height: 100%;
+        }
+        #icon{
+            background-image: url("outline_search_black_24dp.png");
+            background-repeat: no-repeat;
+            background-position: 2px 3px;
+            height: 30px;
+
+        }
+        #micaccess{
+            position: absolute;
+            top: 103px;
+            right: 3px;
+            border: none;
+            background-color: transparent;
+        }
+        .searches{
+            display:inline-flex;
+            flex-wrap: wrap;
+            gap: 42px;
+            margin-top: 25px;
+        }
+        input[type=text]{
+            padding-left: 32px;
+        }    
+        .langchange{
+            position: absolute;
+            transform: translate(100%, 150%)
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+        }
+        .leftbotfoot, .rightbotfoot{
+
+        }
+        .botfoot{
+
+
+        }
+        .leftbotfoot{
+            float:left;
+
+        }
+        .rightbotfoot{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+    </style>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <nav id="leftnav">
+        <a class="about" href="#about">About</a>
+        <a class="store" href="#store">Store</a>
+    </nav>
+    <nav id="rightnav">
+        <a class="gmail" href="#gmail">Gmail</a>
+        <a class="images" href="#images">Images</a>
+        <a href="#profile">
+            <i id="apps" class="material-icons">apps</i>
+        </a>
+        <a href="#profile">
+            <i id="profile" class="material-icons">account_circle</i>
+        </a>
+    </nav>
+    <div class="google-search">
+        <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google-logo">
+        <div class="search-bar">
+            <form action="/user-input">
+                <input type="text" id="icon" name="search" size="60" placeholder="Search Google or type a URL">
+        </div>
+            <div class="searches">
+                <div class="gsearch">
+                    <button id="gsearch" type="submit">Google Search</button>
+                </div>
+                <div class="gsearchlucky">
+                    <form action="/luckyuser-input">
+                        <button id="gluckysearchbutt" type="submit">I'm Feeling Lucky</button>
+                    </form>
+                </div>
+            </div>
+            <button id="micaccess"><i class="material-icons">mic</i></button>
+            </form> 
+        <div class="langchange">
+            <p>Google offered in: <a href=" ">Français</a></p>
+        </div>
+    </div>
+    <div class="bottom">
+    <footer>
+        <div class="upperfoot">
+        </div>
+        <div class="botfoot">
+            <div class="leftbotfoot">
+                <a class="advertising" href="#advertising">Advertising</a>
+                <a class="business" href="#business">Business</a>
+                <a class="searchengineinfo" href="#howsearchworks">How Search Works</a>
+            </div>
+            <div class="rightbotfoot">
+                <a class="privacy" href="#privacy">Privacy</a>
+                <a class="terms" href="#terms">Terms</a>
+                <a class="settings" href="#setting">Settings</a>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
